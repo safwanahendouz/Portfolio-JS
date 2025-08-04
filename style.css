@@ -1,0 +1,136 @@
+
+/* Start Variable */
+
+
+:root {
+    --primary-color : rgb(20, 218, 218);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(138, 132, 132);
+}
+
+.container {
+    min-height: 100vh;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: calc(100%-60px);
+    background-color: rgb(66, 63, 63);
+    color: white;
+}
+/* START NAV-BAR */
+.container .navbar {
+    width: calc(100%-40px);
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container .navbar .logo {
+    font-weight: 700;
+    font-size:23px;
+    font-family: "Sansation", sans-serif;
+    cursor: pointer;
+}
+
+.container .navbar .logo span {
+    color: var(--primary-color);
+}
+
+.container .navbar ul {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ .container .navbar ul li {
+    width: 110px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 19px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.container .navbar ul li:hover {
+    color: rgb(37, 172, 172);
+}
+
+.li-active {
+    color: var(--primary-color)
+}
+
+.container .navbar ul li:hover .line {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(57, 219, 224);
+    position: absolute;
+    bottom: -5px;
+    right: 35px;
+}
+
+/* END NAV-BAR */
+
+/* START HOME */
+
+.container .home {
+    background-color: rgba(73, 48, 27, 0.712);
+    width: calc(100%-40px);
+    min-height: calc(100vh - 130px);
+    padding: 40px;
+}
+
+.container .home .title {
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    font-size: 35px;
+    font-family: "Chiron Hei HK", sans-serif;
+}
+
+.container .home .sub-title {
+    color: rgb(230, 121, 121);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200;
+    font-weight: 400;
+}
+
+.container .home .description {
+    border-radius: 8px;
+    background-color: rgb(163, 112, 71);
+}
+
+.container .home .btn {
+    cursor: pointer;
+    text-align: start;
+}
+
+
+
+    
+    
+
+
+
+
+
+
+
+/* END HOME */
+
+    
+
+
+
+
+
