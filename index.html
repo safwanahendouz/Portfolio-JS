@@ -11,6 +11,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&family=Gravitas+One&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Playwrite+AU+QLD:wght@100..400&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&family=Gravitas+One&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+AU+QLD:wght@100..400&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -21,11 +24,20 @@
      <div class="navbar">
       <div class="logo">SAFWAN <span>SAFWAN</span> </div>
       <UL>
-        <li class="li-active"> <div class="line"></div>Home</li>
-        <li> <div class="line"></div>About</li>
-        <li> <div class="line"></div>Certificates</li>
-        <li> <div class="line"></div>Projects</li>
-        <li> <div class="line"></div>Contact</li>
+        <li onclick="switchNav(0)"> 
+          <div class="line"></div>Home
+        </li>
+
+        <li onclick="switchNav(1)"> 
+          <div class="line"></div>About
+        </li>
+
+        <li onclick="switchNav(2)">
+           <div class="line"></div>Certificates</li>
+        <li onclick="switchNav(3)">
+           <div class="line"></div>Projects</li>
+        <li onclick="switchNav(4)">
+           <div class="line"></div>Contact</li>
       </UL>
         
 
@@ -34,34 +46,73 @@
 
      <!-- Start Home  -->
       <div class="home">
-        <div class="title">I'AM SAFWAN AHENDOUZ / 萨夫万·阿亨杜兹</div>
+        <div class="title">I'AM SAFWAN AHENDOUZ / <span>萨夫万·阿亨杜兹</span></div>
         <div class="sub-title">JavaScript Developer</div>
         <div class="description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint quam quasi voluptatum corporis illum dolorem minus dolores quo beatae ea, ipsa doloremque delectus aliquam? Consequuntur ad recusandae porro impedit consequatur?
+          <div class="desc-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint quam quasi voluptatum corporis illum dolorem minus dolores quo beatae ea, ipsa doloremque delectus aliquam? Consequuntur ad recusandae porro impedit consequatur?
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque incidunt provident reprehenderit nesciunt perspiciatis dolorum laboriosam itaque, nobis, eos quisquam asperiores, unde aliquid consequatur assumenda hic necessitatibus dignissimos corporis animi.
 
+          </div>
+          
         </div>
         <div class="btn">
-          <button type="button">My Projects</button>
-          <button type="button">DOWNLOAD CV</button>
+          <button type="button">MY PROJECTS</button>
+          <button type="button" onclick="goToCv()">DOWNLOAD CV</button>
         </div>
       </div>
       <!-- End Home  -->
 
       <!-- Start About  -->
        <div class="About">
-        <div class="infos">
-          <div class="info">
+        <!-- Start section title -->
+         <div class="section-title">
+          <div class="title">ABOUT</div>
+          <div class="section-line"></div>
+         </div>
+
+         <div class="About-body">
+          <div class="image">
+            <div class="img">
+              <img src="" alt="">
+            </div>
 
           </div>
-        </div>
+
+          <div class="infos">
+            <div class="title">SOFTWARE DEVELOPER</div>
+            <div class="paragraphe">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, minus natus consequuntur dolore quidem autem, ducimus nihil, recusandae sint quos nulla labore nemo repellendus modi.
+
+            </div>
+
+            <div class="social">
+
+              <div class="icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+
+              <div class="icon">
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+
+              <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+
+            </div>
+
+          </div>
+
+         </div>
 
        </div>
+      <!-- End About -->
+       
 
-       <!-- End About -->
 
 
   </div>
-  
+  <script src="script.js"></script>
 </body>
 </html>
