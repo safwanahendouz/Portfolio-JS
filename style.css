@@ -61,6 +61,32 @@ body {
     background-color: rgb(66, 63, 63);
     color: white;
 }
+
+/* start whatssap icon */
+.icon-whats {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    z-index: 200;
+    bottom: 0;
+    top: 75vh;
+    right: 10px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.icon-whats i{
+    color:green;
+    font-size: 65px;
+    font-weight: 700;
+}
+/* end whatssap icon */
+
+
 /* START NAV-BAR */
 .container .navbar {
     width: calc(100%-40px);
@@ -221,7 +247,6 @@ body {
 
 /* start about */
 .About .infos .title {
-    background-color: blueviolet;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,6 +262,114 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.About {
+    width:100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.About-body {
+    background-color: rgb(17, 15, 15);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About .About-body .image {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+
+.About .About-body .image .img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About .About-body .image .img img {
+    width: 230px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.About .About-body .infos {
+    width: 50%;
+    height:400px ;
+    padding: 20px;
+}
+
+.About .About-body .infos .para {
+    width: 100%;
+    font-weight: 400;
+    font-size: medium;
+    margin-bottom: 20px;
+}
+
+.About .About-body .social {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About .About-body .social .icons {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.About .About-body .social .icons .icon:hover {
+    border: 2px solid rgb(160, 150, 150);
+}
+
+.About .About-body .social .icons .icon:hover i {
+    color: rgb(160, 150, 150);
+}
+
+.About .About-body .social .icons .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    border: 1.5px solid aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+    cursor: pointer;
+}
+
+.About .About-body .social .icons .icon i {
+    color: aqua;
+    font-size: 20px;
+}
+    
+
+    
+
+
+    
+
+    
+
+
+
+
+
 
 
 

@@ -14,11 +14,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&family=Gravitas+One&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+AU+QLD:wght@100..400&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/fontawesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 
 </head>
 <body>
 
   <div class="container">
+    <!-- start whatssap icons -->
+     <div class="icon-whats">
+      <i class="fa-brands fa-whatsapp"></i>
+     </div>
+    <!-- end whatssap icons -->
 
     <!-- start Navbar -->
      <div class="navbar">
@@ -58,7 +66,7 @@
         </div>
         <div class="btn">
           <button type="button">MY PROJECTS</button>
-          <button type="button" onclick="goToCv()">DOWNLOAD CV</button>
+          <button type="button" onclick="goTolink('github.com/new')">DOWNLOAD CV</button>
         </div>
       </div>
       <!-- End Home  -->
@@ -74,7 +82,7 @@
          <div class="About-body">
           <div class="image">
             <div class="img">
-              <img src="" alt="">
+              <img src="../img.jpg" alt="">
             </div>
 
           </div>
@@ -87,20 +95,24 @@
             </div>
 
             <div class="social">
+              <div class="icons">
 
-              <div class="icon">
+                <div onclick="goTolink('github.com/new')" class="icon">
                 <i class="fa-brands fa-github"></i>
               </div>
 
-              <div class="icon">
-                <i class="fa-brands fa-bootstrap"></i>
+              <div onclick="goTolink('linkedin.com/uas/login-submit')" class="icon">
+                <i class="fa-brands fa-linkedin"></i>
               </div>
 
-              <div class="icon">
+              <div onclick="goTolink('www.instagram.com/')" class="icon">
                 <i class="fa-brands fa-instagram"></i>
               </div>
 
             </div>
+            
+            </div>
+
 
           </div>
 

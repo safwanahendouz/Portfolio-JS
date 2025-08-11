@@ -13,9 +13,9 @@ function switchNav(num) {
     lists.forEach((list)=>{
         list.classList.remove('li-active')
         list.children[0].classList.remove('line-active')
+    })
        
         
-    })
 
     lists[num].classList.add('li-active')
     lists[num].children[0].classList.add('line-active')
@@ -26,6 +26,6 @@ function switchNav(num) {
 
 // Go to link
 
-function goToCv() {
-    window.open('https://github.com/new')
+function goTolink(mylink) {
+    window.open(`https://${mylink}`)
 }
